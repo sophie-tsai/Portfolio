@@ -2,3 +2,51 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* TYPOGRAPHY */
+
+/* ICONS & PHOTOS */
+
+.about-me-photo {
+  object-fit: cover;
+  width: 50%;
+  order: 2;
+}
+
+/* LAYOUT */
+
+.page-container {
+  text-align: center;
+}
+
+.page-title {
+  text-align: left;
+}
+
+.about-me-main {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.about-me-body {
+  text-align: right;
+  padding: 1em;
+  order: 1;
+}
+
+/* FORM */
+
+input {
+  width: 100%;
+}
+
+.contact-form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.input-name {
+  width: 45%;
+}
