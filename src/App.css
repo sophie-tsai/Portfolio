@@ -1,4 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #ffffff;
+  --primary: #bed3c3;
+  --secondary: #8ba6a9;
+  --tertiary: #476a6f;
+  --text-color: #272727;
+}
+
 body {
+  margin: 0;
+  padding: 1em;
+  background: var(--background);
+  color: var(--text-color);
+}
+
+span {
   margin: 0;
   padding: 0;
 }
@@ -9,23 +28,29 @@ body {
 
 .about-me-photo {
   object-fit: cover;
-  width: 50%;
+  object-position: center;
+  width: 45%;
   order: 2;
 }
 
 .project-image {
   width: 20%;
-  border: 5px white solid;
+  border: 5px var(--tertiary) solid;
+  margin: 1em 1.5em;
 }
 
 /* LAYOUT */
 
 .page-container {
   text-align: center;
+  height: 90vh;
 }
 
 .page-title {
   text-align: left;
+  font-size: 3.5rem;
+
+  margin: 0;
 }
 
 .about-me-main {
@@ -41,17 +66,57 @@ body {
   order: 1;
 }
 
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.signature {
+  flex: 0;
+  justify-self: end;
+}
 /* FORM */
 
-input {
+input,
+button,
+textarea {
   width: 100%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border: none;
+  border: 3px var(--secondary) solid;
+  border-radius: 7px;
+  color: var(--tertiary);
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.5em;
+  margin-top: 1em;
+  width: 50%;
+  margin-left: auto;
+  color: var(--background);
+  background-color: var(--secondary);
+}
+
+textarea {
+  resize: vertical;
 }
 
 .contact-form {
-  width: 80%;
-  margin: 0 auto;
+  width: 50%;
+  margin: 5em auto;
 }
 
 .input-name {
-  width: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-name-children {
+  width: 49%;
 }
