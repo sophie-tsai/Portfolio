@@ -1,0 +1,28 @@
+/* ICONS & PHOTOS */
+
+.about-me-photo {
+  object-fit: cover;
+  object-position: center;
+  max-height: 80vh;
+  width: 45%;
+  order: 2;
+}
+
+/* LAYOUT */
+
+.about-me-section {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.about-me-main {
+  order: 1;
+}
+
+.about-me-body {
+  text-align: right;
+  padding: 1em;
+  margin: 0;
+}

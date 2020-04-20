@@ -26,19 +26,6 @@ span {
 
 /* ICONS & PHOTOS */
 
-.about-me-photo {
-  object-fit: cover;
-  object-position: center;
-  width: 45%;
-  order: 2;
-}
-
-.project-image {
-  width: 20%;
-  border: 5px var(--tertiary) solid;
-  margin: 1em 1.5em;
-}
-
 /* LAYOUT */
 
 .page-container {
@@ -49,74 +36,6 @@ span {
 .page-title {
   text-align: left;
   font-size: 3.5rem;
-
-  margin: 0;
-}
-
-.about-me-main {
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  width: 70%;
-}
-
-.about-me-body {
-  text-align: right;
-  padding: 1em;
-  order: 1;
-}
-
-.contact-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.signature {
-  flex: 0;
-  justify-self: end;
-}
-/* FORM */
-
-input,
-button,
-textarea {
-  width: 100%;
-  padding: 0.5em;
-  margin: 0.5em 0;
-  border: none;
-  border: 3px var(--secondary) solid;
-  border-radius: 7px;
   color: var(--tertiary);
-  font-size: 1rem;
-}
-
-button {
-  cursor: pointer;
-  padding: 0.5em;
-  margin-top: 1em;
-  width: 50%;
-  margin-left: auto;
-  color: var(--background);
-  background-color: var(--secondary);
-}
-
-textarea {
-  resize: vertical;
-}
-
-.contact-form {
-  width: 50%;
-  margin: 5em auto;
-}
-
-.input-name {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.input-name-children {
-  width: 49%;
+  margin: 0;
 }

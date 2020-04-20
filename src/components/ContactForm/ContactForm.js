@@ -1,6 +1,7 @@
 import React from "react";
+import "./ContactForm.css";
 
-function Form() {
+function ContactForm() {
   return (
     <form className="contact-form" action="#" method="post">
       <span className="input-name">
@@ -17,11 +18,11 @@ function Form() {
       </span>
       <input type="email" placeholder="email" />
       <br />
-      <textarea rows="4" placeholder="message" />
+      <textarea rows="7" placeholder="message" />
       <br />
       <button type="submit">submit</button>
     </form>
   );
 }
 
-export default Form;
+export default ContactForm;

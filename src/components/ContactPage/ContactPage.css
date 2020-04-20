@@ -1,0 +1,13 @@
+/* LAYOUT */
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.signature {
+  flex: 0;
+  justify-self: end;
+}

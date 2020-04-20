@@ -1,5 +1,5 @@
 import React from "react";
-import Projects from "../components/Projects";
+import Projects from "../Projects/Projects";
 
 function ProjectsPage() {
   return (

@@ -1,0 +1,7 @@
+/* ICONS & PHOTOS */
+
+.project-image {
+  width: 20%;
+  border: 5px var(--tertiary) solid;
+  margin: 1em 1.5em;
+}
