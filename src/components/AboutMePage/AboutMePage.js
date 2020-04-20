@@ -40,6 +40,17 @@ function AboutMePage() {
             magna ac placerat vestibulum lectus mauris ultrices eros. Varius
             duis at consectetur lorem donec.
           </p>
+          <div className="icons-social-media">
+            <a href="https://github.com/sophie-tsai">
+              <FontAwesomeIcon icon={["fab", "github"]} size="3x" />
+            </a>
+            <a href="https://www.linkedin.com/in/sophietsai/">
+              <FontAwesomeIcon icon={["fab", "linkedin-in"]} size="3x" />
+            </a>
+            <a href="https://www.instagram.com/corgowaffles/">
+              <FontAwesomeIcon icon={["fab", "instagram"]} size="3x" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

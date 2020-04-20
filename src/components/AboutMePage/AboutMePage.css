@@ -8,6 +8,15 @@
   order: 2;
 }
 
+.icons-social-media a {
+  padding: 0 1em;
+  color: var(--primary);
+}
+
+.icons-social-media a:focus,
+.icons-social-media a:hover {
+  color: var(--secondary);
+}
 /* LAYOUT */
 
 .about-me-section {
@@ -19,6 +28,7 @@
 
 .about-me-main {
   order: 1;
+  text-align: right;
 }
 
 .about-me-body {
