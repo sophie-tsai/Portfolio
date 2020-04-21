@@ -36,7 +36,7 @@ const projectsData = [
   },
   {
     id: 6,
-    name: "Guess A Number From 1 to 100!",
+    name: "The Number Game",
     url: "https://sophie-tsai.github.io/Number-Game/",
     img: `${process.env.PUBLIC_URL}/projectsImgs/The-Number-Game.png`,
     technologies: [],

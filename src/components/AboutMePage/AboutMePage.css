@@ -7,10 +7,13 @@
   height: 50vh;
   order: 2;
   margin: auto 0;
+  margin-bottom: 1.5em;
+  border: 5px var(--primary) solid;
+  border-radius: 7px;
 }
 
 .icons-social-media a {
-  padding: 0 1em;
+  padding-left: 1em;
   color: var(--primary);
 }
 
@@ -31,12 +34,12 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-right: 1.5em;
 }
 
 .about-me-body {
   text-align: center;
-  padding: 1em;
-  margin: 0;
+  margin-bottom: 1em;
 }
 
 @media (min-width: 700px) {
@@ -47,6 +50,7 @@
   .about-me-photo {
     max-width: 50%;
     height: 80vh;
+    margin: auto 0;
   }
 
   .about-me-main {

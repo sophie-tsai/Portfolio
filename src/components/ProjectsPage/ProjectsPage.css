@@ -5,12 +5,8 @@
 /* LAYOUT */
 
 .projects-container {
-  /* height: 90%; */
   display: flex;
   flex-direction: column;
-
-  /* padding: 10% 0; */
-
   width: 100%;
 }
 

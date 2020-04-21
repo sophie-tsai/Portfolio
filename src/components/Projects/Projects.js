@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 // import screenshot from "../../assets/projectsImg/project-screenshot.png";
 //import "../../../public/projectsImgs/";
 import "./Projects.css";
 
 function Projects(props) {
-  const { url, img } = props.item;
+  const [hovered, setHovered] = useState(false);
+  const { url, img, name } = props.item;
+  const displayName = hovered && name;
 
   return (
     <div className="project-container">
-      <a href={url}>
+      <a
+        className="project-img-container"
+        href={url}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+      >
         <img className="project-image" src={img} alt="screenshot of project" />
+        <p className="displayName">{displayName}</p>
       </a>
     </div>
   );
