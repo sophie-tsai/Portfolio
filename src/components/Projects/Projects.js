@@ -1,14 +1,13 @@
 import React from "react";
-import screenshot from "../../assets/project-screenshot.png";
 import "./Projects.css";
 
-function Projects() {
+function Projects(props) {
+  const { url, img } = props.item;
+
   return (
-    <img
-      className="project-image"
-      src={screenshot}
-      alt="screenshot of project"
-    />
+    <a href={url}>
+      <img className="project-image" src={img} alt="screenshot of project" />
+    </a>
   );
 }
 
