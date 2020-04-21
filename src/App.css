@@ -30,7 +30,9 @@ span {
 
 .page-container {
   text-align: center;
-  height: 100vh;
+  height: 95vh;
+
+  margin: auto;
 }
 
 .page-title {

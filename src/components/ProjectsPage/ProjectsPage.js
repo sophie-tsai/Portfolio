@@ -1,17 +1,14 @@
 import React from "react";
 import Projects from "../Projects/Projects";
+import "./ProjectsPage.css";
 
 function ProjectsPage() {
   return (
     <div className="page-container">
       <h2 className="page-title">projects.</h2>
-      <Projects />
-      <Projects />
-      <Projects />
-      <br />
-      <Projects />
-      <Projects />
-      <Projects />
+      <div className="projects-container">
+        <Projects />
+      </div>
     </div>
   );
 }

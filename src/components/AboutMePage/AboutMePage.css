@@ -3,9 +3,10 @@
 .about-me-photo {
   object-fit: cover;
   object-position: center;
-  max-height: 80vh;
-  width: 45%;
+  max-height: 80%;
+  width: 55%;
   order: 2;
+  margin: auto 0;
 }
 
 .icons-social-media a {
@@ -24,11 +25,15 @@
   flex-direction: row;
   margin: 0 auto;
   width: 70%;
+  height: 90%;
 }
 
 .about-me-main {
   order: 1;
   text-align: right;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .about-me-body {

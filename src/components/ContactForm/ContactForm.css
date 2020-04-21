@@ -18,8 +18,15 @@ button {
   padding: 0.5em;
   margin-top: 1em;
   width: 50%;
-  margin-left: auto;
+
   color: var(--background);
+  border: 3px var(--primary) solid;
+  background-color: var(--primary);
+}
+
+button:focus,
+button:hover {
+  border: 3px var(--secondary) solid;
   background-color: var(--secondary);
 }
 
@@ -29,15 +36,15 @@ textarea {
 
 .contact-form {
   width: 60%;
-  margin: 10% auto;
+  margin: auto;
 }
 
-.input-name {
+.input-contact-info {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.input-name-children {
+.input-contact-info-children {
   width: 49%;
 }
