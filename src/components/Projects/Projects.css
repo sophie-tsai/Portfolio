@@ -1,7 +1,14 @@
 /* ICONS & PHOTOS */
 
 .project-image {
-  width: 20%;
-  border: 5px var(--tertiary) solid;
-  margin: 1em 1.5em;
+  width: 95%;
+  border: 5px var(--primary) solid;
+  margin: 1em auto;
+  /* background-color: pink; */
+}
+
+@media (min-width: 700px) {
+  .project-container {
+    width: 50%;
+  }
 }

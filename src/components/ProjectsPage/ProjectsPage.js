@@ -11,7 +11,12 @@ function ProjectsPage() {
   return (
     <div className="page-container">
       <h2 className="page-title">projects.</h2>
-      <div className="projects-container">{projectsItems}</div>
+      <div className="page-section">
+        <p className="projects-tech">
+          show all - html - css - javascript - react - live api
+        </p>
+        <div className="projects-container">{projectsItems}</div>
+      </div>
     </div>
   );
 }

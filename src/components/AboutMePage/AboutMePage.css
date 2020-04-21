@@ -3,8 +3,8 @@
 .about-me-photo {
   object-fit: cover;
   object-position: center;
-  max-height: 80%;
-  width: 55%;
+  max-width: 100%;
+  height: 50vh;
   order: 2;
   margin: auto 0;
 }
@@ -22,22 +22,39 @@
 
 .about-me-section {
   display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  width: 70%;
-  height: 90%;
+  flex-direction: column;
 }
 
 .about-me-main {
-  order: 1;
-  text-align: right;
+  order: 2;
+  text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 .about-me-body {
-  text-align: right;
+  text-align: center;
   padding: 1em;
   margin: 0;
+}
+
+@media (min-width: 700px) {
+  .about-me-section {
+    flex-direction: row;
+  }
+
+  .about-me-photo {
+    max-width: 50%;
+    height: 80vh;
+  }
+
+  .about-me-main {
+    order: 1;
+    text-align: right;
+  }
+
+  .about-me-body {
+    text-align: right;
+  }
 }

@@ -6,7 +6,7 @@ function ContactPage() {
   return (
     <div className="page-container">
       <h2 className="page-title">contact.</h2>
-      <div className="contact-page">
+      <div className="page-section contact-section">
         <ContactForm />
         <p className="signature">designed and created by sophie tsai.</p>
       </div>

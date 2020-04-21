@@ -35,8 +35,9 @@ textarea {
 }
 
 .contact-form {
-  width: 60%;
+  width: 100%;
   margin: auto;
+  /* background-color: purple; */
 }
 
 .input-contact-info {
@@ -47,4 +48,10 @@ textarea {
 
 .input-contact-info-children {
   width: 49%;
+}
+
+@media (min-width: 700px) {
+  .contact-form {
+    width: 70%;
+  }
 }
