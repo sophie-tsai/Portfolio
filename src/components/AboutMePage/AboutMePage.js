@@ -1,6 +1,6 @@
 import React from "react";
 import aboutMePhoto from "../../assets/me-waffles.JPG";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Icons from "../Icons/Icons";
 import "./AboutMePage.css";
 
 function AboutMePage() {
@@ -24,17 +24,8 @@ function AboutMePage() {
             loves going to the dog beach and trying new resturants. Sophie lives
             in Los Angeles with her corgi, Waffles.
           </p>
-          <div className="icons-social-media">
-            <a href="https://github.com/sophie-tsai">
-              <FontAwesomeIcon icon={["fab", "github"]} size="3x" />
-            </a>
-            <a href="https://www.linkedin.com/in/sophietsai/">
-              <FontAwesomeIcon icon={["fab", "linkedin-in"]} size="3x" />
-            </a>
-            <a href="https://www.instagram.com/corgowaffles/">
-              <FontAwesomeIcon icon={["fab", "instagram"]} size="3x" />
-            </a>
-          </div>
+
+          <Icons />
         </div>
       </div>
     </div>

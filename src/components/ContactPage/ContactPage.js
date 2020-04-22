@@ -1,5 +1,6 @@
 import React from "react";
 import ContactForm from "../ContactForm/ContactForm";
+import Icons from "../Icons/Icons";
 import "./ContactPage.css";
 
 function ContactPage() {
@@ -8,8 +9,9 @@ function ContactPage() {
       <h2 className="page-title">contact.</h2>
       <div className="page-section contact-section">
         <ContactForm />
-        <p className="signature">designed and created by sophie tsai.</p>
       </div>
+      <Icons />
+      <p className="signature">designed and created by sophie tsai.</p>
     </div>
   );
 }

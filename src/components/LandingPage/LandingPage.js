@@ -1,11 +1,14 @@
 import React from "react";
+import "./LandingPage.css";
 
 function LandingPage() {
   return (
     <div className="page-container">
-      <h1>hello world.</h1>
-      <p>i'm sophie</p>
-      <p>a frontend web developer</p>
+      <div className="page-section landing-page-section">
+        <h1 className="header-landing">hello world.</h1>
+        <p className="intro-landing">i'm sophie,</p>
+        <p className="title-landing">a frontend web developer</p>
+      </div>
     </div>
   );
 }

@@ -1,7 +1,14 @@
+/* TYPOGRAPHY */
+
+.signature {
+  font-size: 0.75rem;
+}
+
 /* LAYOUT */
 
 .contact-section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 50vh;
 }

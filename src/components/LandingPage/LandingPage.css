@@ -1,0 +1,32 @@
+/* TYPOGRAPHY */
+
+.header-landing {
+  font-size: 4rem;
+  color: var(--tertiary);
+}
+
+.intro-landing,
+.title-landing {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* LAYOUT */
+
+.landing-page-section {
+  /* background: orange; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 700px) {
+  .header-landing {
+    font-size: 6rem;
+  }
+
+  .intro-landing,
+  .title-landing {
+    font-size: 1.5rem;
+  }
+}
