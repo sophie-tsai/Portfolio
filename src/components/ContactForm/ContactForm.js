@@ -21,7 +21,9 @@ function ContactForm() {
       <br />
       <textarea rows="5" placeholder="message" />
       <br />
-      <button type="submit">submit</button>
+      <button className="button-submit" type="submit">
+        submit
+      </button>
     </form>
   );
 }

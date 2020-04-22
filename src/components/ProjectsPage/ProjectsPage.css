@@ -2,12 +2,25 @@
 
 /* ICONS & PHOTOS */
 
+.button-tech {
+  margin: 0.5em;
+}
+
 /* LAYOUT */
+
+.button-tech-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
 .projects-container {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 1em;
 }
 
 @media (min-width: 700px) {
@@ -15,5 +28,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .button-tech-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
   }
 }

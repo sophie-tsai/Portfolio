@@ -1,7 +1,6 @@
 /* FORM */
 
 input,
-button,
 textarea {
   width: 100%;
   padding: 0.5em;
@@ -15,11 +14,10 @@ textarea {
 
 button {
   cursor: pointer;
-  padding: 0.5em;
-  margin-top: 1em;
-  width: 50%;
-
+  border-radius: 7px;
   color: var(--background);
+  border: none;
+  border: 3px var(--primary) solid;
   background-color: var(--primary);
 }
 
@@ -40,6 +38,12 @@ textarea:hover {
 
 textarea {
   resize: vertical;
+}
+
+.button-submit {
+  padding: 0.5em;
+  margin-top: 1em;
+  width: 50%;
 }
 
 .contact-form {

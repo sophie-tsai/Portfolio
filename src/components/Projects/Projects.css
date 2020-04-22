@@ -5,7 +5,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--text-color);
+  color: var(--background);
   font-weight: 700;
   font-size: 2rem;
 }
@@ -16,18 +16,16 @@
   width: 95%;
   border: 5px var(--primary) solid;
   border-radius: 7px;
-  margin: 1em auto;
-  /* background-color: pink; */
 }
 
 .project-container {
   position: relative;
+
+  margin: 0.75em auto;
 }
 
 .project-img-container:focus,
 .project-img-container:hover {
-  /* filter: opacity(50%);
-  filter: blur(2px); */
   outline: none;
 }
 
