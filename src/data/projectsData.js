@@ -1,4 +1,5 @@
 const projectsData = {
+  techCategories: ["all", "html", "css", "javascript", "react", "api"],
   projects: [
     {
       id: 1,

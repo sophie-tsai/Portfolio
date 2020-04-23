@@ -1,19 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Projects from "../Projects/Projects";
 import "./ProjectsPage.css";
 import projectsData from "../../data/projectsData";
 
 function ProjectsPage() {
+  /* Setup */
   const [activeTech, setActiveTech] = useState("all");
+  const { techCategories, projects } = projectsData;
+  let activeProjects = getActiveProjects();
 
-  const allProjectsItems = mapProjectsArray(projectsData.projects);
+  useEffect(() => {}, [activeTech]);
 
-  //setting up state
-  const [projectsItems, setProjectsItems] = useState(allProjectsItems);
+  /* Functions */
+  function getActiveProjects() {
+    if (activeTech === "all") {
+      return projects;
+    }
 
-  //map out button elements
-  const tech = ["all", "html", "css", "javascript", "react", "api"];
-  const techButtons = tech.map((element) => (
+    return projects.filter((project) =>
+      project.technologies.includes(activeTech)
+    );
+  }
+
+  function handleClick(event) {
+    const { value } = event.target;
+    setActiveTech(value);
+  }
+
+  /* View */
+  const techButtons = techCategories.map((element) => (
     <button
       className={`button-tech ${element === activeTech && "button-active"}`}
       value={element}
@@ -24,38 +39,16 @@ function ProjectsPage() {
     </button>
   ));
 
-  //map out project elements
-  function mapProjectsArray(arr) {
-    return arr.map((item) => <Projects key={item.id} item={item} />);
+  function createProjectComponents() {
+    return activeProjects.map((item) => <Projects key={item.id} item={item} />);
   }
-
-  //filtering the array based onthe button clicked
-  const filteredProjects = (query) => {
-    return projectsData.projects.filter((element) =>
-      element.technologies.includes(query)
-    );
-  };
-
-  //handle click
-  function handleClick(event) {
-    const { value } = event.target;
-    setActiveTech(value);
-    if (value === "all") {
-      setProjectsItems(allProjectsItems);
-    } else {
-      const filteredProjectsItems = mapProjectsArray(filteredProjects(value));
-      setProjectsItems(filteredProjectsItems);
-    }
-  }
-
-  //update projects
 
   return (
     <div className="page-container">
       <h2 className="page-title">projects.</h2>
       <div className="page-section">
         <div className="button-tech-container">{techButtons}</div>
-        <div className="projects-container">{projectsItems}</div>
+        <div className="projects-container">{createProjectComponents()}</div>
       </div>
     </div>
   );
