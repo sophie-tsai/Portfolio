@@ -31,7 +31,8 @@
 }
 
 .project-container-hover {
-  background: linear-gradient(180deg, var(--primary), var(--tertiary));
+  background: linear-gradient(180deg, var(--primary), var(--secondary));
+  border-radius: 7px;
 }
 
 .project-img-container:focus,

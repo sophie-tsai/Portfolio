@@ -9,17 +9,19 @@ function ContactForm() {
           type="text"
           className="input-contact-info-children"
           placeholder="name"
+          required
         />
         <input
           type="email"
           className="input-contact-info-children"
           placeholder="email"
+          required
         />
       </span>
 
-      <input type="text" placeholder="subject" />
+      <input type="text" placeholder="subject" required />
       <br />
-      <textarea rows="5" placeholder="message" />
+      <textarea rows="5" placeholder="message" required />
       <br />
       <button className="button-submit" type="submit">
         submit
