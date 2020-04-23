@@ -13,15 +13,16 @@
 /* ICONS & PHOTOS */
 
 .project-image {
-  width: 95%;
+  width: 100%;
   border: 5px var(--primary) solid;
   border-radius: 7px;
+  margin: 0;
 }
 
 .project-container {
+  width: 100%;
   position: relative;
-
-  margin: 0.75em auto;
+  margin: 0.75em 0;
 }
 
 .project-img-container:focus,
@@ -31,6 +32,6 @@
 
 @media (min-width: 700px) {
   .project-container {
-    width: 50%;
+    width: 48%;
   }
 }

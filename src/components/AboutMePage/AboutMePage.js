@@ -24,7 +24,6 @@ function AboutMePage() {
             loves going to the dog beach and trying new resturants. Sophie lives
             in Los Angeles with her corgi, Waffles.
           </p>
-
           <Icons />
         </div>
       </div>

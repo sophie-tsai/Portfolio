@@ -5,14 +5,17 @@ import "./ContactPage.css";
 
 function ContactPage() {
   return (
-    <div className="page-container">
-      <h2 className="page-title">contact.</h2>
-      <div className="page-section contact-section">
-        <ContactForm />
+    <>
+      <div className="page-container">
+        <h2 className="page-title">contact.</h2>
+        <div className="page-section contact-section">
+          <ContactForm />
+        </div>
+        <Icons />
       </div>
-      <Icons />
+
       <p className="signature">designed and created by sophie tsai.</p>
-    </div>
+    </>
   );
 }
 
