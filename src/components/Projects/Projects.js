@@ -9,14 +9,20 @@ function Projects(props) {
   const displayName = hovered && name;
 
   return (
-    <div className="project-container">
+    <div
+      className={`project-container ${hovered && "project-container-hover"}`}
+    >
       <a
         className="project-img-container"
         href={url}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >
-        <img className="project-image" src={img} alt="screenshot of project" />
+        <img
+          className={`project-image ${hovered && "project-image-hover"}`}
+          src={img}
+          alt="screenshot of project"
+        />
         <p className="displayName">{displayName}</p>
       </a>
     </div>
