@@ -4,11 +4,18 @@ import "./ProjectsPage.css";
 import projectsData from "../../data/projectsData";
 
 function ProjectsPage() {
+  const [activeTech, setActiveTech] = useState("all");
+
+  const allProjectsItems = mapProjectsArray(projectsData.projects);
+
+  //setting up state
+  const [projectsItems, setProjectsItems] = useState(allProjectsItems);
+
   //map out button elements
   const tech = ["all", "html", "css", "javascript", "react", "api"];
   const techButtons = tech.map((element) => (
     <button
-      className="button-tech"
+      className={`button-tech ${element === activeTech && "button-active"}`}
       value={element}
       key={element}
       onClick={(event) => handleClick(event)}
@@ -22,14 +29,9 @@ function ProjectsPage() {
     return arr.map((item) => <Projects key={item.id} item={item} />);
   }
 
-  const allProjectsItems = mapProjectsArray(projectsData);
-
-  //setting up state
-  const [projectsItems, setProjectsItems] = useState(allProjectsItems);
-
   //filtering the array based onthe button clicked
   const filteredProjects = (query) => {
-    return projectsData.filter((element) =>
+    return projectsData.projects.filter((element) =>
       element.technologies.includes(query)
     );
   };
@@ -37,6 +39,7 @@ function ProjectsPage() {
   //handle click
   function handleClick(event) {
     const { value } = event.target;
+    setActiveTech(value);
     if (value === "all") {
       setProjectsItems(allProjectsItems);
     } else {

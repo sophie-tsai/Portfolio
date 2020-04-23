@@ -1,5 +1,10 @@
 /* TYPOGRAPHY */
 
+.button-active {
+  background: var(--secondary);
+  border-color: var(--secondary);
+}
+
 /* ICONS & PHOTOS */
 
 .button-tech {
