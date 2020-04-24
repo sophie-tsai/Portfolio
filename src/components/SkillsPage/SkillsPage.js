@@ -16,7 +16,9 @@ function SkillsPage() {
   ];
   const displaySkills = skills.map((skill) => (
     // eslint-disable-next-line react/jsx-key
-    <p className="skills-text">{skill}</p>
+    <p className="skills-text" key={skill}>
+      {skill}
+    </p>
   ));
 
   return (
