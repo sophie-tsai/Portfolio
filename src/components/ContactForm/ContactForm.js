@@ -1,21 +1,41 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import "./ContactForm.css";
 
 function ContactForm() {
-  const nameRef = useRef(null);
-  const emailRef = useRef(null);
-  const subjectRef = useRef(null);
-  const messageRef = useRef(null);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
-  function postData(event) {
-    event.preventDefault();
+  const [submitButtonText, setSubmitButtonText] = useState("submit");
 
-    const { value: name } = nameRef.current;
-    const { value: email } = emailRef.current;
-    const { value: subject } = subjectRef.current;
-    const { value: message } = messageRef.current;
+  function handleChange(event) {
+    const { id, value } = event.target;
+    setFormData((prevData) => ({ ...prevData, [id]: value }));
+  }
 
-    const formData = {
+  function handleClick(event) {
+    const { name, email, message } = formData;
+    // TODO check if all are filled, if they are then prevent default and post
+    if (name.length !== 0 && email.length !== 0 && message.length !== 0) {
+      event.preventDefault();
+      setSubmitButtonText("sent!");
+      postData();
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    }
+  }
+
+  function postData() {
+    const { name, email, subject, message } = formData;
+
+    const params = {
       "entry.2005620554": name,
       "entry.1045781291": email,
       "entry.1145717750": subject,
@@ -23,8 +43,8 @@ function ContactForm() {
     };
 
     //convert params into url query string
-    let queryString = Object.keys(formData)
-      .map((key) => key + "=" + formData[key])
+    let queryString = Object.keys(params)
+      .map((key) => key + "=" + params[key])
       .join("&");
 
     fetch(
@@ -40,19 +60,16 @@ function ContactForm() {
 
   return (
     <>
-      <form
-        className="contact-form"
-        // action="https://docs.google.com/forms/d/e/1FAIpQLScX31bf-Ko_Mvyxd1jBArbnVrUL1Fg92tKMEPfxVRNnS1bx5A/formResponse"
-        // method="post"
-        id="contactData"
-      >
+      <form className="contact-form" id="contactData">
         <span className="input-contact-info">
           <input
             type="text"
             className="input-contact-info-children"
             placeholder="name"
             name="entry.2005620554"
-            ref={nameRef}
+            onChange={handleChange}
+            id="name"
+            value={formData.name}
             required
           />
           <input
@@ -60,7 +77,9 @@ function ContactForm() {
             className="input-contact-info-children"
             placeholder="email"
             name="entry.1045781291"
-            ref={emailRef}
+            onChange={handleChange}
+            id="email"
+            value={formData.email}
             required
           />
         </span>
@@ -69,19 +88,23 @@ function ContactForm() {
           type="text"
           placeholder="subject"
           name="entry.1145717750"
-          ref={subjectRef}
+          onChange={handleChange}
+          id="subject"
+          value={formData.subject}
         />
         <br />
         <textarea
           rows="5"
           placeholder="message"
           name="entry.839337160"
-          ref={messageRef}
+          onChange={handleChange}
+          id="message"
+          value={formData.message}
           required
         />
         <br />
-        <button className="button-submit" onClick={(event) => postData(event)}>
-          submit
+        <button className="button-submit" onClick={handleClick}>
+          {submitButtonText}
         </button>
       </form>
     </>
