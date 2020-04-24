@@ -3,7 +3,8 @@
 .signature {
   font-size: 0.75rem;
   text-align: center;
-  margin-top: 0.5em;
+
+  margin-top: 0.75em;
 }
 
 /* LAYOUT */
@@ -12,5 +13,5 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 50vh;
+  margin-bottom: 4em;
 }

@@ -12,9 +12,8 @@ function ContactPage() {
           <ContactForm />
         </div>
         <Icons />
+        <p className="signature">designed and created by sophie tsai.</p>
       </div>
-
-      <p className="signature">designed and created by sophie tsai.</p>
     </>
   );
 }

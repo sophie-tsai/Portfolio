@@ -17,14 +17,14 @@ button {
   border-radius: 7px;
   color: var(--background);
   border: none;
-  border: 3px var(--primary) solid;
-  background-color: var(--primary);
+  border: 3px var(--secondary) solid;
+  background-color: var(--secondary);
 }
 
 button:focus,
 button:hover {
-  border: 3px var(--secondary) solid;
-  background-color: var(--secondary);
+  border: 3px var(--tertiary) solid;
+  background-color: var(--tertiary);
   outline: none;
 }
 

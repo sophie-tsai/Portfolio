@@ -5,6 +5,12 @@
 
 .icons-header {
   font-size: 1.75em;
-  margin: 0 0.5em;
-  color: var(--primary);
+  margin: 0 0.75em;
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.icons-header:focus,
+.icons-header:hover {
+  color: var(--tertiary);
 }

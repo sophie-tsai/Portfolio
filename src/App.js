@@ -21,7 +21,6 @@ function App() {
   return (
     <div>
       <Header />
-
       <LandingPage />
       <SkillsPage />
       <ProjectsPage />

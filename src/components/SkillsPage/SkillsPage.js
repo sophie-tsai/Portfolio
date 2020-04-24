@@ -12,9 +12,10 @@ function SkillsPage() {
     "npm",
     "git",
     "github",
-    "adobe cc",
+    "adobe creative cloud",
   ];
   const displaySkills = skills.map((skill) => (
+    // eslint-disable-next-line react/jsx-key
     <p className="skills-text">{skill}</p>
   ));
 
