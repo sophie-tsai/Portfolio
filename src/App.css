@@ -62,7 +62,7 @@ p {
 
 .page-container {
   text-align: center;
-  min-height: 95vh;
+  min-height: 100vh;
   margin: auto;
   padding: 0;
 }
@@ -86,4 +86,20 @@ p {
   .page-title {
     font-size: 3.5rem;
   }
+}
+
+/* MISC */
+/* .scrolling-box {
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  height: 100vh;
+} */
+
+::-webkit-scrollbar {
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 7px;
 }

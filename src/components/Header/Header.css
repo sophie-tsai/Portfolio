@@ -1,0 +1,10 @@
+.container-header {
+  padding: 1em;
+  text-align: center;
+}
+
+.icons-header {
+  font-size: 1.75em;
+  margin: 0 0.5em;
+  color: var(--primary);
+}

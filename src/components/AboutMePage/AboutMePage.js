@@ -6,7 +6,9 @@ import "./AboutMePage.css";
 function AboutMePage() {
   return (
     <div className="page-container">
-      <h2 className="page-title">about me.</h2>
+      <h2 className="page-title" id="user">
+        about me.
+      </h2>
       <div className="page-section about-me-section">
         <img
           className="about-me-photo"

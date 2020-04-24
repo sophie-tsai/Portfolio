@@ -19,7 +19,7 @@ function SkillsPage() {
   ));
 
   return (
-    <div className="page-container">
+    <div className="page-container" id="code">
       <h2 className="page-title">skills.</h2>
       <div className="page-section skills-section">{displaySkills}</div>
     </div>

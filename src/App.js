@@ -8,14 +8,20 @@ import LandingPage from "./components/LandingPage/LandingPage";
 import Header from "./components/Header/Header";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCode,
+  faEnvelope,
+  faUser,
+  faLaptopCode,
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab, faCheckSquare, faCoffee);
+library.add(fab, faCode, faEnvelope, faUser, faLaptopCode);
 
 function App() {
   return (
     <div>
       <Header />
+
       <LandingPage />
       <SkillsPage />
       <ProjectsPage />
