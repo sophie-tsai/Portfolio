@@ -29,11 +29,11 @@
 .project-image-hover {
   opacity: 10%;
 }
-
+/* 
 .project-container-hover {
   background: linear-gradient(180deg, var(--secondary), var(--tertiary));
-  border-radius: 7px;
-}
+  border-radius: 7px; 
+} */
 
 .project-img-container:focus,
 .project-img-container:hover {
