@@ -13,6 +13,7 @@ function SkillsPage() {
     "git",
     "github",
     "adobe creative cloud",
+    "virtual studio code",
   ];
   const displaySkills = skills.map((skill) => (
     // eslint-disable-next-line react/jsx-key
