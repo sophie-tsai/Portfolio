@@ -16,16 +16,17 @@ function SkillsPage() {
     "virtual studio code",
   ];
   const displaySkills = skills.map((skill) => (
-    // eslint-disable-next-line react/jsx-key
-    <p className="skills-text" key={skill}>
+    <li className="skills-text" key={skill}>
       {skill}
-    </p>
+    </li>
   ));
 
   return (
     <div className="page-container" id="code">
       <h2 className="page-title">skills.</h2>
-      <div className="page-section skills-section">{displaySkills}</div>
+      <div className="page-section">
+        <ul className="skills-body">{displaySkills}</ul>
+      </div>
     </div>
   );
 }

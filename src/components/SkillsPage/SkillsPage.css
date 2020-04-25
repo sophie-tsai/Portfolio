@@ -6,9 +6,19 @@
   color: var(--secondary);
 }
 
+.skills-body {
+  list-style-type: none;
+  padding: 0;
+}
+
 /* LAYOUT */
-.skills-section {
-  /* background: pink; */
-  padding: 5vh 0;
-  margin-top: 10vh;
+
+@media (min-height: 700px) {
+  .skills-body {
+    margin-top: 10vh;
+  }
+
+  .skills-text {
+    font-size: 2rem;
+  }
 }

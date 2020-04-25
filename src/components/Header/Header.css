@@ -3,14 +3,22 @@
   text-align: center;
 }
 
-.icons-header {
+.icons {
   font-size: 1.75em;
   margin: 0 0.75em;
   color: var(--secondary);
   cursor: pointer;
 }
 
-.icons-header:focus,
-.icons-header:hover {
+.icons:focus,
+.icons:hover {
   color: var(--tertiary);
+}
+
+.header-icons {
+  list-style-type: none;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
 }

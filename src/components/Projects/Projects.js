@@ -33,6 +33,7 @@ function Projects(props) {
         onMouseLeave={() => set({ xys: [0, 0, 1] })}
         style={{ transform: prop.xys.interpolate(trans) }}
         onMouseEnter={() => setHovered(true)}
+        // eslint-disable-next-line react/jsx-no-duplicate-props
         onMouseLeave={() => setHovered(false)}
       >
         <a className="project-img-container" href={url}>

@@ -5,13 +5,18 @@ import "./Header.css";
 function Header() {
   const icons = ["code", "laptop-code", "user", "envelope"];
   const displayIcons = icons.map((icon) => (
-    // eslint-disable-next-line react/jsx-key
-    <a key={icon} href={`#${icon}`}>
-      <FontAwesomeIcon className="icons-header" icon={icon} />
-    </a>
+    <li key={icon}>
+      <a href={`#${icon}`}>
+        <FontAwesomeIcon className="icons" icon={icon} />
+      </a>
+    </li>
   ));
 
-  return <div className="container-header">{displayIcons}</div>;
+  return (
+    <div className="container-header">
+      <ul className="header-icons">{displayIcons}</ul>
+    </div>
+  );
 }
 
 export default Header;
