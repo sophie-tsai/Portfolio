@@ -30,11 +30,14 @@ function Projects(props) {
         class="card"
         src={img}
         onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-        onMouseLeave={() => set({ xys: [0, 0, 1] })}
+        onMouseLeave={() => {
+          set({ xys: [0, 0, 1] });
+          setHovered(false);
+        }}
         style={{ transform: prop.xys.interpolate(trans) }}
         onMouseEnter={() => setHovered(true)}
-        // eslint-disable-next-line react/jsx-no-duplicate-props
-        onMouseLeave={() => setHovered(false)}
+        // // eslint-disable-next-line react/jsx-no-duplicate-props
+        // onMouseLeave={() => setHovered(false)}
       >
         <a className="project-img-container" href={url}>
           <img

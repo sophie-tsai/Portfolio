@@ -11,13 +11,26 @@
   margin: 0;
 }
 
+.icon-scroll {
+  margin-top: 0vh;
+  color: var(--secondary);
+  animation-duration: 5s;
+}
+
 /* LAYOUT */
 
 .landing-page-section {
-  /* background: orange; */
+  /* background: purple; */
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.body-landing {
+  /* background: orange; */
+  height: 65vh;
+  padding-top: 10vh;
 }
 
 @media (min-width: 700px) {

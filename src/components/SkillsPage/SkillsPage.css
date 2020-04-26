@@ -8,15 +8,17 @@
 
 .skills-body {
   list-style-type: none;
-  padding: 0;
+  padding: 8vh 0;
+  /* background: red; */
+  min-height: 85vh;
 }
 
 /* LAYOUT */
 
-@media (min-height: 700px) {
-  .skills-body {
+@media (min-height: 750px) {
+  /* .skills-body {
     margin-top: 10vh;
-  }
+  } */
 
   .skills-text {
     font-size: 2rem;

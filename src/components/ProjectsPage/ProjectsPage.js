@@ -46,7 +46,7 @@ function ProjectsPage() {
   return (
     <div className="page-container" id="laptop-code">
       <h2 className="page-title">projects.</h2>
-      <div className="page-section">
+      <div className="page-section projects-section">
         <div className="button-tech-container">{techButtons}</div>
         <div className="projects-container">{createProjectComponents()}</div>
       </div>

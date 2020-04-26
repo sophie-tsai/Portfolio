@@ -25,7 +25,7 @@ const projectsData = {
     {
       id: 4,
       name: "Calculator",
-      url: "https://sophie-tsai.github.io/Calculator",
+      url: "https://sophie-tsai.github.io/Calculator/",
       img: `${process.env.PUBLIC_URL}/projectsImgs/Calculator.png`,
       technologies: ["html", "css", "javascript"],
     },

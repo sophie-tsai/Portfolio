@@ -29,6 +29,10 @@
   margin-top: 1em;
 }
 
+.projects-section {
+  padding: 5vh 0;
+}
+
 @media (min-width: 700px) {
   .projects-container {
     flex-direction: row;
@@ -37,7 +41,7 @@
   }
 
   .button-tech-container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;

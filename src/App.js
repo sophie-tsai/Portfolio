@@ -13,9 +13,10 @@ import {
   faEnvelope,
   faUser,
   faLaptopCode,
+  faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab, faCode, faEnvelope, faUser, faLaptopCode);
+library.add(fab, faCode, faEnvelope, faUser, faLaptopCode, faChevronDown);
 
 function App() {
   return (

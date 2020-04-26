@@ -48,7 +48,7 @@
 
 .card {
   background: linear-gradient(180deg, var(--secondary), var(--tertiary));
-  border-radius: 10px;
+  border-radius: 7px;
   border: 0px var(--primary) solid;
 
   background-size: cover;

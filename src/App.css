@@ -40,7 +40,7 @@ h3 {
 }
 
 p {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 @media (min-width: 700px) {
@@ -69,6 +69,7 @@ p {
   min-height: 95vh;
   margin: auto;
   padding: 0;
+
   /* background: blue; */
 }
 
@@ -81,8 +82,8 @@ p {
 }
 
 .page-section {
-  margin: 5vh auto;
-  width: 70%;
+  margin: 0 auto;
+  width: 80%;
   min-height: 65vh;
   /* background: green; */
 }
@@ -90,6 +91,10 @@ p {
 @media (min-width: 700px) {
   .page-title {
     font-size: 3.5rem;
+  }
+
+  .page-section {
+    width: 70%;
   }
 }
 
