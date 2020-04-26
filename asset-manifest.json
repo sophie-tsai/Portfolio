@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.527e598e.chunk.css",
-    "main.js": "/static/js/main.3c1e3dcf.chunk.js",
-    "main.js.map": "/static/js/main.3c1e3dcf.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.eb07c764.js",
-    "runtime-main.js.map": "/static/js/runtime-main.eb07c764.js.map",
-    "static/css/2.ab8a0683.chunk.css": "/static/css/2.ab8a0683.chunk.css",
-    "static/js/2.45087d08.chunk.js": "/static/js/2.45087d08.chunk.js",
-    "static/js/2.45087d08.chunk.js.map": "/static/js/2.45087d08.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.bbdcce3d3b43954017ebf91fde2b0fe0.js": "/precache-manifest.bbdcce3d3b43954017ebf91fde2b0fe0.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.ab8a0683.chunk.css.map": "/static/css/2.ab8a0683.chunk.css.map",
-    "static/css/main.527e598e.chunk.css.map": "/static/css/main.527e598e.chunk.css.map",
-    "static/js/2.45087d08.chunk.js.LICENSE.txt": "/static/js/2.45087d08.chunk.js.LICENSE.txt",
-    "static/media/me-waffles.JPG": "/static/media/me-waffles.0522866f.JPG"
+    "main.css": "/sophie-tsai/Portfolio/static/css/main.527e598e.chunk.css",
+    "main.js": "/sophie-tsai/Portfolio/static/js/main.c175710d.chunk.js",
+    "main.js.map": "/sophie-tsai/Portfolio/static/js/main.c175710d.chunk.js.map",
+    "runtime-main.js": "/sophie-tsai/Portfolio/static/js/runtime-main.d099e9db.js",
+    "runtime-main.js.map": "/sophie-tsai/Portfolio/static/js/runtime-main.d099e9db.js.map",
+    "static/css/2.ab8a0683.chunk.css": "/sophie-tsai/Portfolio/static/css/2.ab8a0683.chunk.css",
+    "static/js/2.a2b96f0d.chunk.js": "/sophie-tsai/Portfolio/static/js/2.a2b96f0d.chunk.js",
+    "static/js/2.a2b96f0d.chunk.js.map": "/sophie-tsai/Portfolio/static/js/2.a2b96f0d.chunk.js.map",
+    "index.html": "/sophie-tsai/Portfolio/index.html",
+    "precache-manifest.a932d123c74b322a9ed2bbf8ba78d659.js": "/sophie-tsai/Portfolio/precache-manifest.a932d123c74b322a9ed2bbf8ba78d659.js",
+    "service-worker.js": "/sophie-tsai/Portfolio/service-worker.js",
+    "static/css/2.ab8a0683.chunk.css.map": "/sophie-tsai/Portfolio/static/css/2.ab8a0683.chunk.css.map",
+    "static/css/main.527e598e.chunk.css.map": "/sophie-tsai/Portfolio/static/css/main.527e598e.chunk.css.map",
+    "static/js/2.a2b96f0d.chunk.js.LICENSE.txt": "/sophie-tsai/Portfolio/static/js/2.a2b96f0d.chunk.js.LICENSE.txt",
+    "static/media/me-waffles.JPG": "/sophie-tsai/Portfolio/static/media/me-waffles.0522866f.JPG"
   },
   "entrypoints": [
-    "static/js/runtime-main.eb07c764.js",
+    "static/js/runtime-main.d099e9db.js",
     "static/css/2.ab8a0683.chunk.css",
-    "static/js/2.45087d08.chunk.js",
+    "static/js/2.a2b96f0d.chunk.js",
     "static/css/main.527e598e.chunk.css",
-    "static/js/main.3c1e3dcf.chunk.js"
+    "static/js/main.c175710d.chunk.js"
   ]
 }
