@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Projects.css";
+import "animate.css";
 import { useSpring, animated } from "react-spring";
 
 function Projects(props) {
@@ -23,7 +24,7 @@ function Projects(props) {
   return (
     <div
       className={
-        `project-container` /*${hovered && "project-container-hover"}*/
+        `project-container animated fadeInLeft` /*${hovered && "project-container-hover"}*/
       }
     >
       <animated.div

@@ -24,9 +24,9 @@ function AboutMePage() {
             </p>
             <p>
               Before making the career jump, she worked in the digital media
-              industry as a video editor and a producer. During her free time,
-              she loves going to the dog beach and trying new resturants. Sophie
-              lives in Los Angeles with her corgi, Waffles.
+              industry as a video editor and producer. During her free time, she
+              loves going to the dog beach and exploring the city. Sophie lives
+              in Los Angeles with her corgi, Waffles.
             </p>
             <p>Email: hello@sophietsai.com</p>
           </div>
