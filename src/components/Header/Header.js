@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Header.css";
+import "animate.css";
 
 function Header() {
   const icons = ["code", "laptop-code", "user", "envelope"];
@@ -14,7 +15,7 @@ function Header() {
 
   return (
     <div className="container-header">
-      <ul className="header-icons">{displayIcons}</ul>
+      <ul className="header-icons animated fadeIn">{displayIcons}</ul>
     </div>
   );
 }

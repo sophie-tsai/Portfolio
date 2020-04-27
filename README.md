@@ -1,4 +1,4 @@
-In-development
+See it live [here](http://sophietsai.com).
 
 **Check out other projects:**
 
