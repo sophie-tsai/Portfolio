@@ -12,6 +12,7 @@ function LandingPage() {
           <p className="intro-landing">i'm sophie</p>
           <p className="title-landing">a frontend web developer</p>
         </div>
+
         <span className="animated infinite bounce slow icon-scroll">
           <FontAwesomeIcon icon={"chevron-down"} size="2x" />
         </span>

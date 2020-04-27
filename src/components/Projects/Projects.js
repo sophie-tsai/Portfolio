@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Projects.css";
 import "animate.css";
 import { useSpring, animated } from "react-spring";
+import ScrollAnimation from "react-animate-on-scroll";
 
 function Projects(props) {
   const [hovered, setHovered] = useState(false);
@@ -24,31 +25,31 @@ function Projects(props) {
   return (
     <div
       className={
-        `project-container animated fadeInLeft` /*${hovered && "project-container-hover"}*/
+        `project-container` /*${hovered && "project-container-hover"}*/
       }
     >
-      <animated.div
-        class="card"
-        src={img}
-        onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-        onMouseLeave={() => {
-          set({ xys: [0, 0, 1] });
-          setHovered(false);
-        }}
-        style={{ transform: prop.xys.interpolate(trans) }}
-        onMouseEnter={() => setHovered(true)}
-        // // eslint-disable-next-line react/jsx-no-duplicate-props
-        // onMouseLeave={() => setHovered(false)}
-      >
-        <a className="project-img-container" href={url}>
-          <img
-            className={`project-image ${hovered && "project-image-hover"}`}
-            src={img}
-            alt="screenshot of project"
-          />
-          <p className="displayName">{displayName}</p>
-        </a>
-      </animated.div>
+      <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+        <animated.div
+          className="card"
+          src={img}
+          onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+          onMouseLeave={() => {
+            set({ xys: [0, 0, 1] });
+            setHovered(false);
+          }}
+          style={{ transform: prop.xys.interpolate(trans) }}
+          onMouseEnter={() => setHovered(true)}
+        >
+          <a className="project-img-container" href={url}>
+            <img
+              className={`project-image ${hovered && "project-image-hover"}`}
+              src={img}
+              alt="screenshot of project"
+            />
+            <p className="displayName">{displayName}</p>
+          </a>
+        </animated.div>
+      </ScrollAnimation>
     </div>
   );
 }

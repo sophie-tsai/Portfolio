@@ -1,5 +1,6 @@
 import React from "react";
 import "./SkillsPage.css";
+import ScrollAnimation from "react-animate-on-scroll";
 
 function SkillsPage() {
   const skills = [
@@ -17,13 +18,16 @@ function SkillsPage() {
   ];
   const displaySkills = skills.map((skill) => (
     <li className="skills-text" key={skill}>
-      {skill}
+      <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+        {skill}
+      </ScrollAnimation>
     </li>
   ));
 
   return (
     <div className="page-container" id="code">
       <h2 className="page-title">skills.</h2>
+
       <div className="page-section">
         <ul className="skills-body">{displaySkills}</ul>
       </div>
