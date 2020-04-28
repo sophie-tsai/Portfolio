@@ -16,10 +16,18 @@ function ContactForm() {
     setFormData((prevData) => ({ ...prevData, [id]: value }));
   }
 
+  function isValidEmail(email) {
+    return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
+  }
+
   function handleClick(event) {
     const { name, email, message } = formData;
-    // TODO check if all are filled, if they are then prevent default and post
-    if (name.length !== 0 && email.length !== 0 && message.length !== 0) {
+    if (
+      name.length !== 0 &&
+      email.length !== 0 &&
+      isValidEmail(email) &&
+      message.length !== 0
+    ) {
       event.preventDefault();
       setSubmitButtonText("sent!");
       postData();
