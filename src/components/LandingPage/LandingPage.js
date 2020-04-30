@@ -17,10 +17,9 @@ function LandingPage() {
             a frontend web developer
           </p>
         </div>
-
-        <span className="animated infinite bounce slow icon-scroll">
+        <a href="#code" className="animated infinite bounce slow icon-scroll">
           <FontAwesomeIcon icon={"chevron-down"} size="2x" />
-        </span>
+        </a>
       </div>
     </div>
   );

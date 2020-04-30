@@ -15,6 +15,7 @@ function SkillsPage() {
     "github",
     "adobe creative cloud",
     "virtual studio code",
+    "firebase",
   ];
   const displaySkills = skills.map((skill) => (
     <li className="skills-text" key={skill}>

@@ -22,16 +22,18 @@ function AboutMePage() {
           <div className="about-me-main">
             <div className="about-me-body">
               <p>
-                Sophie is a frontend web developer who loves bringing ideas to
-                life. Experienced in Javascript ES6 and React, she is looking
-                for a fulltime position.
+                Sophie is a frontend web developer based in Los Angeles. She
+                loves all things Javascript and React, and is currently looking
+                for a full time position.
               </p>
               <p>
-                Before making the career jump, she worked in the digital media
-                industry as a video editor and producer. During her free time,
-                she loves going to the dog beach and exploring the city. Sophie
-                lives in Los Angeles with her corgi, Waffles.
+                Fun fact, prior to making the jump to software engineering, she
+                worked in the digital media industry as a video editor &
+                producer. During her free time, she enjoys going to the dog
+                beach with her corgi, Waffles, and pretending she will cook all
+                the recipes she has bookmarked.
               </p>
+
               <p>Email: hello@sophietsai.com</p>
             </div>
             <Icons />
