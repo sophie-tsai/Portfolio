@@ -9,7 +9,7 @@ function SkillsPage() {
     "bootstrap",
     "javascript es6",
     "react",
-    "api",
+    "web api",
     "npm",
     "git",
     "github",
