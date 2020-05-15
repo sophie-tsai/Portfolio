@@ -53,32 +53,6 @@ function ContactForm() {
     }
   }
 
-  // function postData() {
-  //   const { name, email, subject, message } = formData;
-
-  //   const params = {
-  //     "entry.2005620554": name,
-  //     "entry.1045781291": email,
-  //     "entry.1145717750": subject,
-  //     "entry.839337160": message,
-  //   };
-
-  //   //convert params into url query string
-  //   let queryString = Object.keys(params)
-  //     .map((key) => key + "=" + params[key])
-  //     .join("&");
-
-  //   fetch(
-  //     `https://docs.google.com/forms/d/e/1FAIpQLScX31bf-Ko_Mvyxd1jBArbnVrUL1Fg92tKMEPfxVRNnS1bx5A/formResponse?${queryString}&submit=Submit`,
-  //     {
-  //       mode: "no-cors",
-  //       headers: {
-  //         "Content-type": "application/x-www-form-urlencoded",
-  //       },
-  //     }
-  //   );
-  // }
-
   return (
     <>
       <form className="contact-form" id="contactData">

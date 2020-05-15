@@ -40,7 +40,12 @@ function Projects(props) {
           style={{ transform: prop.xys.interpolate(trans) }}
           onMouseEnter={() => setHovered(true)}
         >
-          <a className="project-img-container" href={url}>
+          <a
+            className="project-img-container"
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className={`project-image ${hovered && "project-image-hover"}`}
               src={img}
