@@ -3,7 +3,7 @@
 .signature {
   font-size: 0.75rem;
   text-align: center;
-
+  color: var(--tertiary);
   margin-top: 0.75em;
 }
 

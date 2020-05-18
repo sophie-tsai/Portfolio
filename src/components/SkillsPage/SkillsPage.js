@@ -6,6 +6,7 @@ function SkillsPage() {
   const skills = [
     "html",
     "css",
+    "responsive web design",
     "bootstrap",
     "javascript es6",
     "react",

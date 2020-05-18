@@ -10,6 +10,7 @@
 .title-landing {
   font-size: 1rem;
   margin: 0;
+  color: var(--tertiary);
 }
 
 .icon-scroll {

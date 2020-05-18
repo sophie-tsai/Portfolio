@@ -15,7 +15,14 @@ function ContactPage() {
           </div>
         </ScrollAnimation>
         <Icons />
-        <p className="signature">designed and created by sophie tsai.</p>
+        <a
+          href="https://github.com/sophie-tsai/Portfolio"
+          target="_blank"
+          className="signature"
+          rel="noopener noreferrer"
+        >
+          designed and created by sophie tsai.
+        </a>
       </div>
     </>
   );

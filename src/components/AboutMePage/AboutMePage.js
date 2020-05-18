@@ -34,7 +34,7 @@ function AboutMePage() {
                 the recipes she has bookmarked.
               </p>
 
-              <p>Email: hello@sophietsai.com</p>
+              <p>hello@sophietsai.com</p>
             </div>
             <Icons />
           </div>
