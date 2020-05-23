@@ -1,6 +1,21 @@
 const projectsData = {
-  techCategories: ["all", "html", "css", "javascript", "react", "api"],
+  techCategories: [
+    "all",
+    "html",
+    "css",
+    "javascript",
+    "react",
+    "api",
+    "firebase",
+  ],
   projects: [
+    {
+      id: 0,
+      name: "HomeQuarters",
+      url: "https://sophie-tsai.github.io/HomeQuarters",
+      img: `${process.env.PUBLIC_URL}/projectsImgs/HomeQuarters.png`,
+      technologies: ["html", "css", "javascript", "react", "api", "firebase"],
+    },
     {
       id: 1,
       name: "PhotoShopper",
@@ -13,7 +28,7 @@ const projectsData = {
       name: "What's This Dog Breed?",
       url: "https://sophie-tsai.github.io/Dog-Breed-Quiz/",
       img: `${process.env.PUBLIC_URL}/projectsImgs/Dog-Breed-Quiz.png`,
-      technologies: ["html", "css", "javascript", "react", "api"],
+      technologies: ["html", "css", "javascript", "react", "api", "firebase"],
     },
     {
       id: 3,
@@ -33,7 +48,7 @@ const projectsData = {
       id: 5,
       name: "To Do List",
       url: "https://sophie-tsai.github.io/To-Do-List/",
-      img: `${process.env.PUBLIC_URL}/projectsImgs/to-do-list.png`,
+      img: `${process.env.PUBLIC_URL}/projectsImgs/ToDo-List.png`,
       technologies: ["html", "css", "javascript"],
     },
     {
