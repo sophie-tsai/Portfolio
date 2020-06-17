@@ -9,7 +9,7 @@
 
 .button-tech {
   margin: 0.7em;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 /* LAYOUT */
@@ -33,13 +33,17 @@
   padding: 5vh 0;
 }
 
-@media (min-width: 700px) {
+/* if screen is over 800px */
+@media (min-width: 800px) {
   .projects-container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+}
 
+/* if screen is over 1250px */
+@media (min-width: 1250px) {
   .button-tech-container {
     width: 100%;
     margin: 0 auto;

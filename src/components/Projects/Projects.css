@@ -14,7 +14,8 @@
 
 .project-image {
   width: 100%;
-
+  height: initial;
+  object-fit: cover;
   border: 5px var(--primary) solid;
   border-radius: 7px;
   margin: 0;
@@ -22,6 +23,7 @@
 
 .project-container {
   width: 100%;
+  height: 100%;
   position: relative;
   margin: 1.25em 0;
 }
@@ -29,21 +31,10 @@
 .project-image-hover {
   opacity: 10%;
 }
-/* 
-.project-container-hover {
-  background: linear-gradient(180deg, var(--secondary), var(--tertiary));
-  border-radius: 7px; 
-} */
 
 .project-img-container:focus,
 .project-img-container:hover {
   outline: none;
-}
-
-@media (min-width: 700px) {
-  .project-container {
-    width: 48%;
-  }
 }
 
 .card {
@@ -56,4 +47,16 @@
   /* box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.5s; */
   will-change: transform;
+}
+/* MEDIA QUERIES */
+
+/* if screen is over 800px */
+@media (min-width: 800px) {
+  .project-container {
+    width: 48%;
+  }
+
+  .project-image {
+    height: 17vw;
+  }
 }
