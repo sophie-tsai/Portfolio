@@ -85,6 +85,7 @@ p {
   margin: 0 auto;
   width: 80%;
   min-height: 65vh;
+
   /* background: green; */
 }
 
@@ -101,7 +102,7 @@ p {
 /* MISC */
 
 ::-webkit-scrollbar {
-  background: transparent; /* Optional: just make scrollbar invisible */
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {

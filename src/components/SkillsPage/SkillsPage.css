@@ -2,24 +2,25 @@
 
 .skills-text {
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: var(--secondary);
 }
 
 .skills-body {
   list-style-type: none;
-  padding: 15vh 0;
-  /* background: red; */
-  min-height: 85vh;
+  padding: 10vh 0;
+  column-count: 1;
+  min-height: 80vh;
 }
 
 /* LAYOUT */
 
-@media (min-height: 750px) {
-  /* .skills-body {
-    margin-top: 10vh;
-  } */
-
+/* if screen is over 800px */
+@media (min-width: 800px) {
+  .skills-body {
+    column-count: 2;
+    padding: 20vh 0;
+  }
   .skills-text {
     font-size: 2rem;
   }
