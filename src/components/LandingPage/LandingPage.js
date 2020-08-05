@@ -14,7 +14,7 @@ function LandingPage() {
           </h1>
           <p className="intro-landing animated fadeInUp delay-2s">i'm sophie</p>
           <p className="title-landing animated fadeInUp delay-3s">
-            a web developer
+            a software engineer
           </p>
         </div>
         <a href="#code" className="animated infinite bounce slow icon-scroll">
