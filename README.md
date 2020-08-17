@@ -2,6 +2,10 @@ See it live [here](http://sophietsai.com).
 
 **Check out other projects:**
 
+- [Waffs' Shop](https://corgowaffles.com)
+- [Smolify](https://sophie-tsai.github.io/smolify/)
+- [Dog Breed Quiz](https://sophie-tsai.github.io/Dog-Breed-Quiz/)
+- [HomeQuarters](https://sophie-tsai.github.io/HomeQuarters)
 - [Drum Kit](https://sophie-tsai.github.io/Drum-Kit/)
 - [Number Game](https://sophie-tsai.github.io/Number-Game/)
 - [To-Do List](https://sophie-tsai.github.io/To-Do-List/)
