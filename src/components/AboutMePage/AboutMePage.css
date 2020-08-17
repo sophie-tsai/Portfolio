@@ -26,7 +26,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-right: 1.5em;
 }
 
 .about-me-body {
@@ -48,6 +47,7 @@
   .about-me-main {
     order: 1;
     text-align: right;
+    margin-right: 1.5em;
   }
 
   .about-me-body {
