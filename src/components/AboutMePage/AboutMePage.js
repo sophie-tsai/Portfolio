@@ -22,9 +22,8 @@ function AboutMePage() {
           <div className="about-me-main">
             <div className="about-me-body">
               <p>
-                Sophie is a web developer based in Los Angeles. She loves all
-                things Javascript and React, and is currently looking for a full
-                time position.
+                Sophie is a software engineer based in Los Angeles. She loves
+                all things Javascript and React.
               </p>
               <p>
                 Fun fact, prior to making the jump to software engineering, she
