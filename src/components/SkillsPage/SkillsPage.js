@@ -31,7 +31,7 @@ function SkillsPage() {
     "postman",
     "netlify",
     "adobe creative cloud",
-    "virtual studio code",
+    "visual studio code",
   ];
   const displaySkills = skills.map((skill) => (
     <li className="skills-text" key={skill}>
