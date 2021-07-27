@@ -16,14 +16,15 @@ function AboutMePage() {
           <img
             className="about-me-photo"
             src={aboutMePhoto}
-            alt="sophie holding her dog Waffles in San Francisco"
+            alt="Sophie holding her dog Waffles in San Francisco"
           />
 
           <div className="about-me-main">
             <div className="about-me-body">
               <p>
-                Sophie is a software engineer based in Los Angeles. She loves
-                all things Javascript and React.
+                Sophie is a software engineer based in Los Angeles. She
+                currently works at Blueprint Test Prep as a software engineer,
+                developing learning platforms for MCAT and LSAT students.
               </p>
               <p>
                 Fun fact, prior to making the jump to software engineering, she
@@ -32,7 +33,6 @@ function AboutMePage() {
                 with her corgi, Waffles, and pretending she will cook all the
                 recipes she has bookmarked.
               </p>
-
               <p>hello@sophietsai.com</p>
             </div>
             <Icons />

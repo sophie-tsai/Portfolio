@@ -4,34 +4,53 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 function SkillsPage() {
   const skills = [
+    // libraries
+    "next.js",
+    "apollo",
+    "react",
+    "redux",
+
+    // languages
+    "javascript es6+",
+    "typescript",
+    "python",
+    "graphQL",
+
+    // design
     "html",
     "css",
     "scss",
     "responsive web design",
-    "wireframing",
     "bootstrap",
-    "javascript es6+",
-    "typescript",
-    "react",
-    "redux",
-    "shopify",
-    "apis",
-    "libraries",
-    "npm",
+    "bulma",
+
+    // testing
+    "testrail",
+    "behave",
+    "cucumber",
+    "selenium",
+    "jest",
+    "react testing library",
+
+    // tools
     "git",
     "github",
-    "firebase",
+    "gitlab (ci/cd)",
+
+    // backend
+    "dynamodb",
     "mongoDB",
-    "mongoose",
     "express",
     "node.js",
+
+    // software / platforms
+    "sentry",
+    "launchdarkly",
+    "firebase",
+    "shopify",
     "heroku",
-    "axios",
-    "graphQL",
-    "postman",
     "netlify",
     "adobe creative cloud",
-    "visual studio code",
   ];
   const displaySkills = skills.map((skill) => (
     <li className="skills-text" key={skill}>
