@@ -23,8 +23,8 @@ function AboutMePage() {
             <div className="about-me-body">
               <p>
                 Sophie is a software engineer based in Los Angeles. She
-                currently works at Blueprint Test Prep as a software engineer,
-                developing learning platforms for MCAT and LSAT students.
+                currently works at Glean Analytics, a fintech startup, building
+                a smart AP and spend analytics platform.
               </p>
               <p>
                 Fun fact, prior to making the jump to software engineering, she

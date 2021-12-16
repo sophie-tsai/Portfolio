@@ -6,7 +6,7 @@ function SkillsPage() {
   const skills = [
     // libraries
     "next.js",
-    "apollo",
+    "apollo server/client",
     "react",
     "redux",
 

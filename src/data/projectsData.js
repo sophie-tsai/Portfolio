@@ -16,6 +16,22 @@ const projectsData = {
   ],
   projects: [
     {
+      id: 13,
+      name: "blueprint test prep",
+      url: "https://bit.ly/blueprint-sophie",
+      img: `${process.env.PUBLIC_URL}/projectsImgs/Blueprint.png`,
+      technologies: [
+        "html",
+        "scss",
+        "javascript",
+        "typescript",
+        "react",
+        "redux",
+        "graphQL",
+        "apollo",
+      ],
+    },
+    {
       id: 12,
       name: "waffs shop",
       url: "https://corgowaffles.com",
